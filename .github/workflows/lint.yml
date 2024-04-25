@@ -1,0 +1,11 @@
+name: Lint Check
+on: [push]
+jobs:
+  lint:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install clang-format
+      run: brew install clang-format
+    - name: Run clang-format
+      run: clang-format -i -style=file $(find . -regex '.*\.(cpp|h)')

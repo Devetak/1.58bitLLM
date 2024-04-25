@@ -1,0 +1,12 @@
+# macOS specific
+.DS_Store
+*.swp
+
+# Build files
+build/
+*.o
+*.d
+
+# Executable files
+*.out
+*.exe
