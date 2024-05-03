@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 11)
 include_directories(include)
 
 # Add a library with both add.cpp and core_utils.cpp
-add_library(addlib src/add.cpp src/core_utils.cpp)
+add_library(addlib src/add.cpp src/core_utils.cpp src/utils.cpp)
 
 # Add executables for the test suites
 add_executable(test_add tests/test_add.cpp)
